@@ -289,16 +289,6 @@ INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.cod
 INPUT /usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-INPUT /usr/share/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
-INPUT /usr/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 INPUT /usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
@@ -370,6 +360,8 @@ INPUT /usr/share/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
 INPUT /usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT /usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+INPUT ./logo.jpg
+INPUT ./logo.jpg
 INPUT ./main.aux
 OUTPUT main.aux
 INPUT /usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -388,6 +380,7 @@ INPUT /usr/share/texmf-dist/tex/latex/translator/translator-months-dictionary-En
 INPUT /usr/share/texmf-dist/tex/latex/translator/translator-numbers-dictionary-English.dict
 INPUT /usr/share/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 INPUT ./main.nav
+INPUT ./logo.jpg
 INPUT /usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
@@ -409,10 +402,12 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /home/vinograd0v/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc
+INPUT ./logo.jpg
 OUTPUT main.vrb
+INPUT ./logo.jpg
 INPUT ./main.vrb
 INPUT ./main.bbl
+INPUT ./logo.jpg
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 OUTPUT main.nav
 OUTPUT main.toc

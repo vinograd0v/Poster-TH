@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2025.1.15)  8 FEB 2025 09:45
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2025.1.15)  8 FEB 2025 10:14
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1168,24 +1168,6 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
-Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
-
-(/usr/share/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-matrix.code.tex
-File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-quotes.code.tex
-File: tikzlibraryquotes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen327
-\pgfarrowlength=\dimen328
-\pgfarrowwidth=\dimen329
-\pgfarrowlinewidth=\dimen330
 ))) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -1197,7 +1179,7 @@ Package pgfplots info on input line 124: Initializing with LUA version Lua 5.3
 \t@pgfplots@toka=\toks52
 \t@pgfplots@tokb=\toks53
 \t@pgfplots@tokc=\toks54
-\pgfplots@tmpa=\dimen331
+\pgfplots@tmpa=\dimen327
 \c@pgfplots@coordindex=\count379
 \c@pgfplots@scanlineindex=\count380
 
@@ -1260,14 +1242,14 @@ pgfsys-luatex.def)))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen332
-\pgfdecoratedremainingdistance=\dimen333
-\pgfdecoratedinputsegmentcompleteddistance=\dimen334
-\pgfdecoratedinputsegmentremainingdistance=\dimen335
-\pgf@decorate@distancetomove=\dimen336
+\pgfdecoratedcompleteddistance=\dimen328
+\pgfdecoratedremainingdistance=\dimen329
+\pgfdecoratedinputsegmentcompleteddistance=\dimen330
+\pgfdecoratedinputsegmentremainingdistance=\dimen331
+\pgf@decorate@distancetomove=\dimen332
 \pgf@decorate@repeatstate=\count384
-\pgfdecorationsegmentamplitude=\dimen337
-\pgfdecorationsegmentlength=\dimen338
+\pgfdecorationsegmentamplitude=\dimen333
+\pgfdecorationsegmentlength=\dimen334
 )
 \tikz@lib@dec@box=\box82
 )
@@ -1282,12 +1264,12 @@ ons.pathreplacing.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua
 .code.tex)
 \pgfplots@numplots=\count385
-\pgfplots@xmin@reg=\dimen339
-\pgfplots@xmax@reg=\dimen340
-\pgfplots@ymin@reg=\dimen341
-\pgfplots@ymax@reg=\dimen342
-\pgfplots@zmin@reg=\dimen343
-\pgfplots@zmax@reg=\dimen344
+\pgfplots@xmin@reg=\dimen335
+\pgfplots@xmax@reg=\dimen336
+\pgfplots@ymin@reg=\dimen337
+\pgfplots@ymax@reg=\dimen338
+\pgfplots@zmin@reg=\dimen339
+\pgfplots@zmax@reg=\dimen340
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 plotmarks.code.tex
@@ -1300,58 +1282,62 @@ Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 )
 \sepwidth=\skip85
 \colwidth=\skip86
-\c@defin=\count386
-\c@teor=\count387
+\c@teor=\count386
 
 (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count388
-\l__lipsum_a_int=\count389
-\l__lipsum_b_int=\count390
+\g__lipsum_par_int=\count387
+\l__lipsum_a_int=\count388
+\l__lipsum_b_int=\count389
 
 (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 39.
+(hyperref)                removing `\\' on input line 25.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 39.
+(hyperref)                removing `\\' on input line 25.
 
+<logo.jpg, id=10, 1258.7025pt x 1242.6425pt>
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package luatex.def Info: logo.jpg  used on input line 26.
+(luatex.def)             Requested size: 276.9154pt x 273.3822pt.
 (./main.aux
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 )
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+8.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1389,16 +1375,16 @@ LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count391
-\scratchdimen=\dimen345
+\scratchcounter=\count390
+\scratchdimen=\dimen341
 \scratchbox=\box83
-\nofMPsegments=\count392
-\nofMParguments=\count393
+\nofMPsegments=\count391
+\nofMParguments=\count392
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count394
-\MPscratchDim=\dimen346
-\MPnumerator=\count395
-\makeMPintoPDFobject=\count396
+\MPscratchCnt=\count393
+\MPscratchDim=\dimen342
+\MPnumerator=\count394
+\makeMPintoPDFobject=\count395
 \everyMPtoPDFconversion=\toks60
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1409,7 +1395,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 28.
  (./main.out)
 (./main.out)
 \@outlinefile=\write5
@@ -1440,34 +1426,46 @@ Dictionary: translator-numbers-dictionary, Language: English
 sh.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.14).
 
 (./main.nav)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-5.
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package luatex.def Info: logo.jpg  used on input line 28.
+(luatex.def)             Requested size: 276.9154pt x 273.3822pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+8.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-5.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+8.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-45.
+28.
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 45.
+(Font)              <6> on input line 28.
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package luatex.def Info: logo.jpg  used on input line 31.
+(luatex.def)             Requested size: 276.9154pt x 273.3822pt.
 
 \openout4 = main.vrb
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package luatex.def Info: logo.jpg  used on input line 81.
+(luatex.def)             Requested size: 276.9154pt x 273.3822pt.
  (./main.vrb
 
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
@@ -1476,9 +1474,14 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                With LuaTeX, lipsum requires babel to get proper
 (lipsum)                hyphenation (you can use \usepackage[base]{babel}).
 
-(./main.bbl)) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(./main.bbl))
+File: logo.jpg Graphic file (type jpg)
+<use logo.jpg>
+Package luatex.def Info: logo.jpg  used on input line 81.
+(luatex.def)             Requested size: 276.9154pt x 273.3822pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
+<./logo.jpg>]
 \tf@nav=\write6
 
 \openout6 = main.nav
@@ -1488,8 +1491,7 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 \tf@snm=\write8
 
 \openout8 = main.snm
-
-(./main.aux
+ (./main.aux
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 )
@@ -1502,25 +1504,25 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42335 strings out of 476447
- 476952,1977958 words of node,token memory allocated
- 121134 words of node memory still in use:
-   300 hlist, 33 vlist, 27 rule, 1546 disc, 56 local_par, 6 math, 2052 glue, 136
-3 kern, 120 penalty, 10568 glyph, 1138 attribute, 82 glue_spec, 571 attribute_li
-st, 4 write, 128 pdf_literal, 1 pdf_dest, 174 pdf_colorstack nodes
-   avail lists: 2:493,3:762,4:645,5:4119,6:171,7:37984,8:1,9:1191,10:34,11:4638
- 63146 multiletter control sequences out of 65536+600000
- 75 fonts using 14365207 bytes
- 128i,17n,116p,724b,1016s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 41427 strings out of 476447
+ 476937,1977958 words of node,token memory allocated
+ 121180 words of node memory still in use:
+   308 hlist, 33 vlist, 30 rule, 1546 disc, 56 local_par, 6 math, 2059 glue, 136
+3 kern, 123 penalty, 10546 glyph, 1152 attribute, 82 glue_spec, 578 attribute_li
+st, 4 write, 128 pdf_literal, 1 pdf_dest, 172 pdf_colorstack, 1 pdf_setmatrix, 1
+ pdf_save, 1 pdf_restore nodes
+   avail lists: 2:514,3:780,4:639,5:4119,6:171,7:37939,8:1,9:1224,10:34,11:4638
+ 62267 multiletter control sequences out of 65536+600000
+ 74 fonts using 14239119 bytes
+ 128i,21n,116p,724b,1016s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/truetype/typoland/lato/Lato-LightItalic.ttf></usr/s
 hare/texmf-dist/fonts/truetype/typoland/lato/Lato-Light.ttf></usr/share/texmf-di
-st/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf-dist/fonts/op
-entype/impallari/raleway/Raleway-Regular.otf></usr/share/texmf-dist/fonts/openty
-pe/impallari/raleway/Raleway-Bold.otf>
-Output written on main.pdf (1 page, 49103 bytes).
+st/fonts/opentype/impallari/raleway/Raleway-Regular.otf></usr/share/texmf-dist/f
+onts/opentype/impallari/raleway/Raleway-Bold.otf>
+Output written on main.pdf (1 page, 189962 bytes).
 
-PDF statistics: 59 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+PDF statistics: 53 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
