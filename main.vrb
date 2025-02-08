@@ -1,0 +1,50 @@
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{Resumen}
+
+\lipsum[1]
+
+  \end{block}
+
+\begin{block}{El teorema de Dirichlet}
+    \lipsum[2]
+\end{block}
+
+  \begin{alertblock}{Bloque de color}
+
+    \lipsum[1-5]
+  \end{alertblock}
+
+ \begin{block}{The Goldie Condition}
+    \lipsum[1-4]
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+  \begin{block}{Aquí comienza la otra columna}
+    \lipsum[1-4]
+  \end{block}
+
+
+
+
+
+  \begin{block}{References}
+
+    \nocite{*}
+    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+
+  \end{block}
+
+\end{column}
+\separatorcolumn
+
+
+
+\end{columns}

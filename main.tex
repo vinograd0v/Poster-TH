@@ -32,6 +32,7 @@
 \newcommand{\defi}[1]{\textbf{\textsl{#1}}}
 \newcommand{\ann}{\mathrm{ann}}
 \newtheorem{teor}{Theorem}
+\usepackage{lipsum}
 
 \title{Sobre el teorema de los números primos en progresiones aritmética}
 
@@ -49,74 +50,23 @@
 
 \begin{column}{\colwidth}
 
-  \begin{block}{Abstract}
+  \begin{block}{Resumen}
 
-    In commutative algebra, the inverse image of prime ideals under a commutative ring homomorphism yields prime ideals, establishing a functorial correspondence between commutative rings and their prime spectrums. However, this correspondence does not hold for non-commutative rings. The aim of this presentation is to see how the correspondence fails. Furthermore, based on the discussion started by Artin and Shelter \textbf{\cite{Artin}} and continued by Letzter \textbf{\cite{Letzter}}, and using the framework of adjoint functors between prime spectrums, some cases are identified where a weaker correspondence may occur, giving new insights into the relationship between rings and their prime spectrums beyond the commutative case.
+\lipsum[1]
 
   \end{block}
 
-  \begin{block}{Preliminaries}
-
-    Let us see some preliminar concepts:
-    \begin{itemize}
-        \item In this presentation, a ring means an associative ring with unity and the relation $A\ideal R$ denotes that $A$ is an ideal of a ring $R$.
-        \item An ideal $P$ of a ring $R$ is called \defi{prime} if $AB\subseteq P$ with $A,B\ideal R$, then $A\subseteq P$ or $B\subseteq P$. The \defi{spectrum of a ring} is the set of all prime ideals and it is denoted by $\spec(R)$. It is endowed with \defi{Zariski topology}, i.e., the topology where the closed sets are of the form
-        \begin{equation*}
-            V_R(N):=\{P\in\spec(R)~|~N\subseteq P\},
-        \end{equation*}
-        with $N\subseteq R$. Throughout this work it is assumed that $\spec(R)$ always has the Zariski topology.
-        \item Let $M$ be a right $R$-module. The \defi{annihilator} of $M$ is the set $\ann_R(M)=\{r\in R~|~mr=0,~\forall m\in M\}$.
-        \item Let $X$ and $Y$ be sets. A \defi{correspondence} is a function from $X$ to $P(Y)$, the power set of $Y$, and it is denoted by $\mathbf{r}:X\to Y$. The direct image of $U\subseteq X$ is the set $\mathbf{r}(U):=\bigcup_{u\in U}\mathbf{r}(u)$ and the inverse image of $V\subseteq Y$ is the set $\mathbf{r}^{[-1]}(V):=\{u\in X~|~ \mathbf{r}(u)\subseteq V\}$. If $X$ and $Y$ are topological spaces, $\mathbf{r}$ is said to be \defi{continuous} if $\mathbf{r}^{[-1]}(W)$ is an open set of $X$, for all open set $W$ of $Y$.
-    \end{itemize}
-    Let $f:R\to S$ be a commutative ring homomorphism. The following facts are well-known in commutative algebra \textbf{\cite{atiyah1994introduction}}: 
-    \begin{enumerate}
-        \item Let $P\in\spec(S)$. Since $f^{-1}(P)\in\spec(R)$, $f$ induces a continuous map $f^*:\spec(S)\to\spec(R)$ defined by $f^*(P)=f^{-1}(P)$.
-        \item Let $A\subseteq R$. Then $(f^*)^{-1}(V_R(A))=V_S(f(A))$.
-    \end{enumerate} 
-  \end{block}
+\begin{block}{El teorema de Dirichlet}
+    \lipsum[2]
+\end{block}
     
-  \begin{alertblock}{Why the facts above do not work in the non-commutative case?}
+  \begin{alertblock}{Bloque de color}
 
-    The following example is taken from \textbf{\cite{Letzter}}. Let
-    \begin{equation*}
-        \begin{array}{cccc}
-             S=\begin{pmatrix}\Bbbk& \Bbbk \\\Bbbk& \Bbbk\end{pmatrix},& R=\left\{\begin{pmatrix}
-                a & b \\ 0 & a                  
-             \end{pmatrix}~\left|\right.~a,b\in\Bbbk\right\} & \text{and} & I=\begin{pmatrix}
-                 0 & \Bbbk \\ 0 & 0
-             \end{pmatrix},
-        \end{array}
-    \end{equation*}
-    where $\Bbbk$ is a field. Let $f$ be the inclusion of $R$ in $S$. By doing exhausting computations, it can be seen that $\spec(S)=\{0\}$, $\spec(R)=\{I\}$, but $f^{-1}(0)=0$, so $f^*$ is not well defined and the numeral 1. above fails. \\ 
-     The numeral 1. above can be weakened in the following way:
-     \begin{enumerate}
-         \item[1'] Let $f:R\to S$ be a non-commutative ring homomorphism. We define the correspondence $f^*:\spec(S)\to\spec(R)$ by assigning to each $P\in\spec(S)$ the set of prime ideals in $R$ such that are minimal (with respect to the subset order) over $f^{-1}(P)$. 
-     \end{enumerate}
-     The numeral 2. above can be weakened in the two following way:
-     \begin{enumerate}
-         \item[2'] Let $A\subseteq R$. $(f^*)^{[-1]}(V_R(X))=V_S(f(A))$.
-         \item[2''] Let $I\ideal R$. Define $I^S:=\ann_S(S/Sf(I))$, and $(f^*)^{[-1]}(V_R(I))=V_S(I^S)$.
-     \end{enumerate}
-     With this weakened versions of the numeral 1. and 2. above, the example satisfies the first condition, but the condition 2' do not works, since $f(I)=I$, $V_S(f(I))=\emptyset$ and $V_R(I)=\{I\}$, $(f^*)^{[-1]}(V_R(I))=\{0\}$. The condition 2'' works, since $I^S=0$. 
+    \lipsum[1-5] 
   \end{alertblock}
 
  \begin{block}{The Goldie Condition}
-    The theory in this section can be found in \textbf{\cite{goodearl_warfield}}. In this section, $R$ is a ring, $A$, $N$ are right $R$-modules and $B$ is a submodule of $A$. Recall that a \defi{right (left) noetherian ring} is a ring such that satisfies the ACC in right (left) ideals. A \defi{noetherian} ring is a ring such that it is left and right noetherian. Although the section uses right modules, the definitions are also available for left modules due to the symmetry of the definitions. Now, let us introduce some new definitions:
-    \begin{itemize}
-        \item $A$ is called \defi{injective} if for any right $R$-module $C$ and any submodule $M$ of $C$, all homomorphism $\phi:M\to A$ can be extend to $\overline{\phi}:C\to A$. The definition can be represented by the following commutative diagramm:
-        \begin{equation*}
-            \begin{tikzcd}
-                M \arrow[hook]{r}{i}\arrow[swap]{d}{\phi}
-            & C \arrow[dashed]{ld}{\overline{\phi}}\\
-            A &
-            \end{tikzcd}
-        \end{equation*}
-        \item $B$ is a \defi{essential submodule} of $A$ if and only if for any submodule $C$ of $A$, $B\cap C\neq 0$. It is denoted by $B\essentialeq A$, and $B$ is called a \defi{proper essential submodule} if it is also a proper submodule of $A$. In addition, $A$ can be called a \defi{essential extension} of $B$.
-        \item An \defi{essential monomorphism} from $A$ to $N$ is any monomorphism (injective homomorphism) $f:A\to N$ such that $f(A)\essentialeq N$.
-        \item An \defi{injective hull} for $A$ is any injective module which is an essential extension of $A$. It can be seen that for any two injective hulls $X,Y$ of $A$, $X\cong Y$, so, it is possible to talk about a unique injective hull. Then, the injective hull of $A$ is denoted by $E(A)$.
-        \item $A$ has \defi{finite rank} if $E(A)$ can be expressed as a finite direct sum of indecomposable submodules. Let $n$ be the number of indecomposable submodules such that are direct sum of $E(A)$. It can be shown that $n$ is unique, so that $n$ is called the \defi{(Goldie) rank} of $A$ and it is denoted by $\rank(A)$.
-        \item A \defi{right annihilator} of $R$ is any ideal $I$ such that $I=r.\ann(X):=\{r\in R ~|~mr=0,~\forall m\in X\}$ for some subset $X$ of $R$. In the case of left annihilator, it be denoted by $l.\ann(X)$.
-    \end{itemize}
+    \lipsum[1-4]
   \end{block}
 
 \end{column}
@@ -124,43 +74,8 @@
 \separatorcolumn
 
 \begin{column}{\colwidth}
-    \begin{itemize}
-        \item $R$ is a \defi{(right) Goldie ring} if $R$ as right module over itself has finite rank and satisfies the ACC on right annihilators. If $R$ is right (left) noetherian it clearly satisfies the ACC on right (left) annihilators, and it can be demonstrated that a left or right noetherian ring, as a module over itself, has finite rank, so all right (left) noetherian rings are right (left) Goldie rings.
-    \end{itemize}
-  \begin{block}{A right reformulation of numerals 1. and 2.}
-    The lattice of closed sets of $\spec(R)$ as a category (with inclusion as morphisms) it is denoted by $\SPEC(R)$. Let $A$ and $B$ be rings, and let $F:\Mod{B}\to \Mod{A}$ be a covariant functor where $\Mod{R}$ is the category of right $R$-modules. Given $I\ideal B$, set 
-    \begin{equation*}
-        I^F:=\ann_A F(B/I).
-    \end{equation*}
-    This makes a correspondence $\mathbf{r}[F]:\spec(B)\to\spec(A)$ sending each $P\in\spec(B)$ to the set of prime ideals minimal over $P^F$. Recall that the \defi{restriction of scalars functor} is as follows: Let $f:A\to B$ be a ring homomorphism, $M$ be a right $B$-module, it has a right $A$-module structure in $M$ in the following way $m\cdot a = mf(a)$, for all $a\in A$, $m\in M$. This functor is the restriction of scalars functor. If taken $F$ the restriction of scalars functor and applying it to $\mathbf{r}[F]$, then the correspondence is given to sending each $P\in\spec(B)$ to the set of prime ideals minimal over $f^{-1}(P)$ (in this case $\mathbf{r}[F]$ it is denoted simply by $\mathbf{r}$). If $A$ and $B$ are commutative rings, then the correspondence $\mathbf{r}$ is the continuous map of the numeral 1. If $A$ and $B$ are non-commutative rings, is the correspondence $\mathbf{r}$ always continuous? If not, when is it continuous? It can be found examples where $\mathbf{r}$ is not continuous. The second question has a partial answer, which follows from the following propositions:\\
-    \vspace{0.5cm}\defi{Lemma 1 \textbf{\cite{Warfield}}:} Let $R$ and $S$ be rings whose prime factors are left or right Goldie rings. Let $P\in\spec_n(S)$, then $\mathbf{r}(P)\in\spec_n(R)$\\
-    \vspace{0.5cm}\defi{Theorem 1 \textbf{\cite{Letzter}}:} Let $n$ be a positive integer. Let $R$ and $S$ be rings as above. Then $\mathbf{r}:\spec_n(S)\to\spec_n(R)$ is continuous.\\
-    \vspace{0.5cm}\defi{Corollary 1 \textbf{\cite{Letzter}}:} If $S$ is a PI ring, then $\mathbf{r}$ is continuous. \\
-    \vspace{0.5cm} Where $\spec_n(R):=\{P\in\spec(R)~|~\mathrm{rank}(R/P)\leq n\}$. A \defi{prime ring} is a ring whose zero ideal is prime and $R$ is called a \defi{polynomial identity ring} or \defi{PI ring} if there exists $p\in \Z\langle x_1,x_2,\ldots,x_n\rangle$ (the free $\Z$-algebra in $n$ generators) such that $p(r_1,r_2,\ldots,r_n)=0$ for all $r_1,r_2,\ldots,r_n\in R$. An example of such rings are commutative rings, since all commutative rings satisfy the equation $xy-yx=0$. \\
-    \vspace{0.5cm}Let $F:\Mod{B}\to\Mod{A}$ be a covariant functor. Let \begin{equation*}
-        \begin{tikzcd}
-            \varphi^{\mathbf{r}[F]}:\SPEC(B)\arrow{rr}{U\mapsto \overline{\mathbf{r}(F)(U)}} & &\SPEC(A), &&\varphi_{\mathbf{r}[F]}:\SPEC(A)\arrow{rr}{U\mapsto \overline{\mathbf{r}^{[-1]}[F](U)}} & &\SPEC(B),\\
-            && \theta^F:\SPEC(B)\arrow{rr}{U\mapsto V_A(I(U)^F)} & &\SPEC(A)
-        \end{tikzcd}
-    \end{equation*}
-    be functors, where $I(U)=\bigcap_{p\in U}P$. It can be shown that $\varphi^{\mathbf{r}[F]}$ is left adjoint to $\varphi_{\mathbf{r}[F]}$ if and only if $\mathbf{r}[F]$ is continuous. It is of interest apply this fact to $\mathbf{r}$ and see when $\varphi^{\mathbf{r}}$ is left adjoint to $\varphi_{\mathbf{r}}$. Let $f:A\to B$ be a ring homomorphism and applying the restriction and extension of scalars functors to $\theta^F$. One gets
-    \begin{equation*}
-        \begin{tikzcd}
-            \lambda:\SPEC(B)\arrow{rrr}{V_S(I)\mapsto V_R(f^{-1}(I))} & &&\SPEC(A) &\text{and}&\rho:\SPEC(A)\arrow{rrr}{V_R(I)\mapsto V_S(I^S)} & &&\SPEC(B)
-        \end{tikzcd}
-    \end{equation*}
-    respectively. Recall that the \defi{extension of scalars functor} is as follows: Let $f:A\to B$ be a ring homomorphism, $M$ be a left $B$-module. By the restriction of scalars functor, $M$ and $B$ have a left and right $A$-module structure respectively, so, $M_B:=B\otimes_A M$ is well-defined and has a right $B$-module structure, this functor is the extension of scalars functor. As a fact, the restriction and extension of scalars functors are an adjoint pair. By doing, again, exhausting computations, it can be shown that $\lambda =\varphi^\mathbf{r}$, and if $A$ and $B$ are commutative, $\rho=\varphi_\mathbf{r}$ and it is not difficult to see that, under the same hypothesis, $\rho$ and $\lambda$ are an adjoint pair, and that adjointness is equivalent to numerals 1. and 2. A new question arises from this: Are the numerals 1' and 2' or 2'' equivalent to that $\lambda$ and $\rho$ being an adjoint pair? In a particular case, it can be proved that the question has a affirmative answer, the following theorems shown that, but before recall the following definitions: The \defi{prime radical} of a ring is the intersection of all prime ideals of the ring, a left or right ideal $I$ of a ring is called \defi{nilpotent} if there exists a $n\in\Z$ such that $I^n=0$, the \defi{radical} of an ideal $I$ of a ring $R$ is the set $\sqrt{I}:=\{a\in R~|~\text{$a^n\in I$ for some $n\in\Z$}\}$, a \defi{semiprime ideal} is an ideal $I$ such that $\sqrt{I}=I$, a ring is called \defi{semiprime} if the zero ideal is semiprime and $J\cap R:=\ann_R(S/SJ)$ with $S/SJ$ the right $R$-module structure given by the restriction of scalars functor.\\
-    \vspace{0.5cm} \defi{Lemma 2 \cite{Letzter}:} Let $R$ and $S$ be rings whose semiprime factors are right or left Goldie rings. The following are equivalent.
-    \begin{enumerate}
-        \item $\lambda$ is left adjoint to $\rho$.
-        \item For all $J\in\spec(S)$ and $I\in\spec(R)$, $I^S\subseteq J$ implies $I\subseteq \sqrt{J\cap R}$.
-    \end{enumerate}
-    \vspace{0.5cm}\defi{Theorem 2 \cite{Letzter}:} Let $R$ and $S$ be rings whose semiprime factors are right or left Goldie rings, and the prime radical of all of the factors of $R$ and $S$ are nilpotent. The following are equivalent:
-    \begin{enumerate}
-        \item $\lambda$ is left adjoint to $\rho$.
-        \item The correspondence $\mathbf{r}$ is a single-valued continuous function, and $\mathbf{r}^{[-1]}(V_R(I))=V_S(I^S)$ for all $I\ideal R$.
-    \end{enumerate}
-    
+  \begin{block}{Aquí comienza la otra columna}
+    \lipsum[1-4]
   \end{block}
   
   
