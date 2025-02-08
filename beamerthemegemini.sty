@@ -1,6 +1,3 @@
-% Gemini theme
-% https://github.com/anishathalye/gemini
-
 % ====================
 % Dependencies
 % ====================
@@ -8,34 +5,23 @@
 \RequirePackage{exscale}
 \RequirePackage{ragged2e}
 \RequirePackage{changepage}
-\RequirePackage{fontspec}
 \RequirePackage{calc}
 
 % ====================
 % Fonts
 % ====================
-
-\newfontfamily\Raleway[Ligatures=TeX]{Raleway}
-\newfontfamily\Lato[Ligatures=TeX]{Lato}
-
 \usefonttheme{professionalfonts}
-
-\setsansfont{Lato}[
-  UprightFont=*-Light,
-  ItalicFont=*-LightItalic,
-  BoldFont=*-Regular,
-  BoldItalicFont=*-Italic
-]
-
-\setbeamerfont{headline}{family=\Raleway}
+\usefonttheme{serif} % Opcional: para texto en serif
+\usepackage{helvet}  % Fuente sans-serif similar a Lato
+% Configurar fuentes para Beamer
+\setbeamerfont{headline}{family=\sffamily}
 \setbeamerfont{headline title}{size=\Huge,series=\bfseries}
 \setbeamerfont{headline author}{size=\Large}
 \setbeamerfont{headline institute}{size=\normalsize}
-\setbeamerfont{block title}{family=\Raleway,size=\large,series=\bfseries}
-\setbeamerfont{heading}{family=\Lato,series=\bfseries}
+\setbeamerfont{block title}{family=\sffamily,size=\large,series=\bfseries}
+\setbeamerfont{heading}{family=\sffamily,series=\bfseries}
 \setbeamerfont{caption}{size=\small}
-\setbeamerfont{footline}{family=\Raleway,size=\normalsize}
-
+\setbeamerfont{footline}{family=\sffamily,size=\normalsize}
 % ====================
 % Macros
 % ====================

@@ -1,23 +1,18 @@
 \documentclass[final]{beamer}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \usepackage[orientation=portrait,size=a0,scale=1.0]{beamerposter}
 \usetheme{gemini}
 \usecolortheme{nott}
 \usepackage{graphicx}
 \usepackage[spanish]{babel}
-\usepackage{booktabs}
-\usepackage{newtxtext,fourier}
+\usepackage{newtxtext,fourier} % Fuentes modernas para texto y matemáticas
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.14}
-\usepackage{anyfontsize}
 \usepackage{amsmath, amsfonts, amsthm, amssymb}
 \newcommand\T{\ensuremath{\mathbb{T}}}
 \newcommand\N{\ensuremath{\mathbb{N}}}
 \newcommand\R{\ensuremath{\mathbb{R}}}
 \newcommand\Z{\ensuremath{\mathbb{Z}}}
-\renewcommand\O{\ensuremath{\emptyset}}
 \newcommand\Q{\ensuremath{\mathbb{Q}}}
 \newcommand\C{\ensuremath{\mathbb{C}}}
 \newlength{\sepwidth}
@@ -26,14 +21,15 @@
 \setlength{\colwidth}{0.45\paperwidth}
 \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
 \newtheorem{teor}{Teorema}
-\newcommand{\defi}[1]{\textbf{\textsl{#1}}}
-\usepackage{lipsum}
-
+\newcommand{\defi}[1]{\textbf{\emph{#1}}} 
 \title{Sobre el teorema de los números primos en progresiones aritmética}
 
 \author{Mateo Andrés Manosalva Amaris\\Trabajo dirigido por John Jaime Rodriguez\\Departamento de Matemáticas, Universidad Nacional de Colombia}
-\logoleft{\includegraphics[scale=0.22]{logo.jpg}}
-
+\logoleft{
+  \begin{tabular}{@{}c@{}}
+    \hspace{3.5cm}\includegraphics[scale=0.22]{logo.jpg} \\
+  \end{tabular}
+}
 \begin{document}
 
 \begin{frame}[t,fragile]
@@ -214,7 +210,7 @@ g(0) = \lim _{T \rightarrow \infty} g_T(0).
 \defi{Teorema (Korevaar y Zagier) }Sean $a_n\geq 0$ y $A(x)=\displaystyle\sum_{n\leq x} a_n$, si  la integral $\displaystyle\int_1^{\infty}\frac{A(x)-x}{x^2}dx$
 converge, entonces $A(x)\thicksim x$\\
 \vspace*{0.2cm}
-Aplicando la anterior y sabiendo que 
+Aplicando lo anterior y sabiendo que 
 \[
 \sum_{n=1}^{\infty}a_nn^{-s} - \frac{s}{s-1} = s \int_1^{\infty} \frac{A(t)-t}{t^{s+1}} d t,
 \]
@@ -242,7 +238,7 @@ $$
 $$
 \end{exampleblock}
 
-\begin{block}{References}
+\begin{block}{Referencias}
 \nocite{*}
 \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
 \end{block}

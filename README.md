@@ -1,2 +1,2 @@
 # Poster-TH
-Jmmm
+Poster exposición modificado para corrar con PDFLaTeX.
