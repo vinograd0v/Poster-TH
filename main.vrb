@@ -5,31 +5,113 @@
 
   \begin{block}{Resumen}
 
-\lipsum[1]
-
+El teorema de los números primos nos dice que en el límite, el cociente $\dfrac{\pi(x)\log x}{x}$ tiende a 1, es decir, que $\pi(x)\thicksim \dfrac{x}{\log x}$ donde $\pi(x)$ es la función contadora de primos. En progresiones aritméticas $a+kq$ con $(a,q)=1$, tenemos que $\pi(a,q,x)$; la función contadora restringida a la progresión, tiene el comportamiento asintótico $\pi(a,q,x)\thicksim \dfrac{x}{\phi(q)\log x}$, es decir, los primos se distribuyen uniformemente en las clases de residuos módulo $q$. En este trabajo se presentará la prueba de este resultado y las ideas subyacentes. Para esto, haremos uso de la teoría Tauberiana, lo que nos permitirá presentar una prueba detallada y corta, que se seguirá estudiando la no nulidad de $L(\chi,s)$ y algunas propiedades de los caracteres y series de Dirichlet.
   \end{block}
 
-\begin{block}{El teorema de Dirichlet}
-    \lipsum[2]
+\begin{block}{El Teorema de Dirichlet}
+
+Desde los tiempos de Euclides se sabe que existen infinitos números primos, sin embargo no se conocía mucho mucho sobre su distribución,
+\begin{itemize}
+    \item  ¿Existen infinitos números primos de la forma $a+kn$?
+    \item ¿Cómo se distribuyen los números primos en cada  una de las clases de equivalencia módulo $n$?.
+\end{itemize}
+El argumento de Euclides provenía de ver que si existen finitos números primos, digamos $p_1,\ldots,p_n$, entonces $p_1p_2\cdots p_n+1$ es un primo adicional.\\
+\vspace*{0.3cm}
+\defi{Teorema (Dirichlet)}
+Dados $a$ y $d$ primos relativos, existen infinitos primos de la forma
+    $$a, a+d,a+2d,a+3d,...$$
+\defi{Teorema (Euler)} La suma $\displaystyle  \sum_{p}\dfrac{1}{p}$ es divergente.\\
+
+La idea de Euler consiste en explotar la identidad
+$$\prod_p \left(1-\dfrac{1}{p^s}\right)^{-1}=\sum_{n=1}^{\infty}\dfrac{1}{n^s},\quad  \Re(s)>1$$
+de donde obtiene que
+    $$
+\log (\zeta(s))=\sum_p^{\infty}\left(\displaystyle\sum_{k=1}^{\infty} \dfrac{1}{k(p)^{k s}}\right)=\sum_p
+\dfrac{1}{p^s}+\sum_{p}\left(\sum_{k=2}^{\infty}\dfrac{1}{kp^{ks}}\right), \quad \Re(s)>1$$
 \end{block}
 
-  \begin{alertblock}{Bloque de color}
+\begin{alertblock}{La idea de Dirichlet}
 
-    \lipsum[1-5]
+Sea $f(n)$ la función característica de la progresión aritmética, es decir
+$$
+f(n)=\left\{\begin{array}{lll}
+1, & n \equiv a & \pmod{m} \\
+0, & n \not \equiv a & \pmod{m}
+\end{array}\right.
+$$
+en el caso de que $f(n)$ sea completamente multiplicativa tendríamos un producto de Euler
+$$
+\sum_{n=1}^{\infty} \frac{f(n)}{n^s}=\prod_p\left(1-\frac{f(p)}{p^s}\right)^{-1}, \quad \Re(s)>1
+$$
+y así por argumentos análogos a los de Euler se tendría que
+$$\log \left(\sum_{n=1}^{\infty} \frac{f(n)}{n^s}\right)=\sum_{p \equiv a\bmod{m}} \frac{1}{p^s}+O(1)$$
+Lamentablemente, $f(n)$ generalmente no es multiplicativa.\\
   \end{alertblock}
 
- \begin{block}{The Goldie Condition}
-    \lipsum[1-4]
-  \end{block}
+\begin{block}{Caracteres}
+\defi{Definición: }Sea $G$ un grupo, $\chi$ es un carácter de $G$ si $\chi: G\to \C^{\times}$ y satisface que para todo $a,b\in G$, $\chi(ab)=\chi(a)\chi(b)$.
 
+\defi{Teorema (Ortogonalidad) } Sea $G$ un grupo abeliano finito. Entonces
+\begin{itemize}
+    \item[(i)] Si $\chi$ y $\psi$ son caracteres de $G$
+$$
+\sum_{g \in G} \psi(g) \overline{\chi}(g)= \begin{cases}|G|, & \text { si } \psi=\chi ; \\ 0, & \text { e.o.c. }\end{cases}
+$$
+\item[(ii)] Si $g$ y $h$ son elementos de $G$
+$$
+\sum_{\chi \in \widehat{G}} \chi(g) \overline{\chi}(h)= \begin{cases}|G|, & \text { si } g=h \\ 0, & \text { e.o.c. }\end{cases}
+$$
+\end{itemize}
+El conjunto de caracteres forma un grupo con la multiplicación puntual, lo denotamos $\widehat{G}$\\
+\vspace*{0.2cm}
+\defi{Definición: }Sea $f: G \rightarrow \mathbb{C}$, definimos su transformada de Fourier como la función $\widehat{f}: \widehat{G} \rightarrow \mathbb{C}$ dada por
+$$
+\widehat{f}(\chi)=\sum_{g\in G} f(g) \overline{\chi}(g).
+$$
+\defi{Teorema (Representación de Fourier)} Dada $f: G \rightarrow \mathbb{C}$, tenemos la representación en ``serie'' de Fourier
+$$
+f(g)=\frac{1}{|G|}\sum_{\chi \in \widehat{G}}\widehat{f}(\chi) \chi(g).
+$$
+Diremos que un carácter de Dirichlet es una extensión periódica de un carácter de $(\mathbb{Z}/m\mathbb{Z})^{\times}$ a $\mathbb{N}$
+
+Obtenemos la expresión
+    \begin{align*}
+    \sum_{n=1}^{\infty}\frac{f(n)}{n^s}=\frac{1}{\varphi(m)}\sum_{\chi}\chi(a^{-1})\sum_{n=1}^{\infty}\frac{\chi(n)}{n^s}
+,\end{align*}
+
+y la prueba se sigue de estudiar la expresión
+
+\begin{align*}
+    \frac{1}{\varphi(m)} \sum_{\chi} \chi(a^{-1}) \log L(s, \chi)
+&=\sum_{\substack{p \equiv a\bmod{m}}} \frac{1}{p^s} + O(1)
+.\end{align*}
+
+\defi{Teorema (De La Vallée Poussin) }$$\pi(a,m,x)\thicksim \dfrac{x}{\varphi(m)\log x}$$
+Primero vamos a estudiar que ocurre con primos d ela forma $2k+1$. La expreción toma la forma
+$$\pi(x)\thicksim \dfrac{x}{\log x},$$
+el camino para probar este teorema es ver que
+$$\psi(x)=\sum_{n\leq x} \Lambda(n)\thicksim x,$$
+donde $\Lambda(n)$ es la función de Von Mangolth:
+$$\Lambda(n)=\begin{cases}
+    \log(p) &\text{si } n=p^k, k\geq 1\\
+    0 &\text{e.o.c}
+\end{cases}$$
+
+\end{block}
 \end{column}
 
 \separatorcolumn
 
 \begin{column}{\colwidth}
-  \begin{block}{Aquí comienza la otra columna}
-    \lipsum[1-4]
-  \end{block}
+\begin{block}{Teoremas tauberianos}
+\defi{Proposición: }Sea $\displaystyle \sum_{n=0}^{\infty} a_n x^n$, $x\in \R$ una serie de potencias centrada en $0$ y con radio  de convergencia $1$, si
+$$\sum_{n=0}^{\infty} a_n=A,\text{ entonces } \lim_{x \to 1^-}\sum_{n=0}^{\infty} a_n x^n=A.$$
+Los teoremas tauberianos son recíprocos condicionales del teorema de Abel.\\
+\defi{Proposición (Tauber, 1897)} Sea $f(x)=\displaystyle\sum_{n=0}^{\infty} a_n x^n$ una serie de potencias que converge absolutamente para $|x|<1$.
+Si $\lim_{x \rightarrow 1^{-}} f(x)=A$ y se cumple la condición $a_n=o\left(\dfrac{1}{n}\right)$, entonces $f(1)=A$.\\
+
+Estas condiciones fueron relajadas subsecuentemente por Hardy y Littlewood a $O\left(\dfrac{1}{n}\right)$.
+\end{block}
 
 
 
