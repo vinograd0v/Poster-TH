@@ -1,0 +1,20 @@
+\begin{columns}[t]
+\separatorcolumn
+\begin{column}{\colwidth}
+
+\begin{block}{La familia pepa}
+\lipsum[1]
+\end{block}
+\lipsum[2-6]
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+\lipsum[1-7]
+\end{column}
+
+\separatorcolumn
+
+\end{columns}
