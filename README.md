@@ -1,3 +1,3 @@
-# Poster-TH
+# Poster
 
-Poster en tamaño carta porque Mauro es bautista.
+Poster en tamaño carta, raro pero supongo que puede servir xd
